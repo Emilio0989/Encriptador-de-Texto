@@ -1,0 +1,134 @@
+body{
+    background: rgb(208, 214, 214);
+}
+.logoletra {
+    padding-top: 10px;
+    margin-left: 10px;
+    width: 10%;
+       }
+
+.container {
+    margin-top: 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    gap: 2%;
+}
+.izquierda {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;     
+    width: 50%;
+    height: 500px;
+    margin-left: 5px;
+    gap: 2%;
+    align-self: flex-start;
+    
+}
+
+.derecha {   
+    margin-top: 2%;       
+    width: 50%;
+    height: 400px;      
+    text-align: center;
+
+}
+
+.muneco {
+    margin-top: 2%;
+    width: 50%;
+    height: auto;
+}
+
+.CajaDeTexto{   
+    width: 80%;
+    height: 100%;
+    padding: 20px;   
+    font-size: 1.5em;    
+    border-style: hidden;
+    background-color: rgb(220, 223, 226);  
+    text-align: center; 
+}
+.mensaje{ 
+    width: 23%;
+    height: 50%;
+    padding: 10px;    
+    background: white;
+    background-repeat: no-repeat;
+    border: none;
+    border-radius:24px;
+    margin-top:20px;
+    position:fixed;
+}
+
+    .mensaje:focus{
+        outline: none;
+}
+
+.CajaDeTexto::placeholder {
+    white-space: normal; 
+    word-wrap: break-word; 
+    overflow-wrap: break-word; 
+}
+
+.btn-Encriptar{  
+    background-color: rgb(7, 7, 51);
+    font-size: medium;
+    color: white;
+    border-radius: 15px;
+    font-style: normal;
+}
+.boton2 {    
+    background-color: rgb(192, 192, 197);
+    font-size: medium;
+    color: rgb(7, 7, 51);
+    border-radius: 15px;
+}
+
+
+@media only screen and (max-width: 768px) {
+  
+    .container {
+        flex-direction: column;
+        align-items: stretch;
+        margin-top: 0px;
+        padding-top: 0px;
+    }
+
+    .izquierda,
+    .derecha {
+        width: 100%;
+        margin-top: 0px;
+        padding-top: 0px;
+    }
+
+    .derecha {
+        height: auto;
+        margin-top: 0px;
+        padding-top: 0px;
+    }
+
+    .CajaDeTexto {
+        width: 50%;
+        height: 30%;
+        margin-top: 0px;
+        padding-top: 0px;
+    }
+
+    .muneco {       
+        width: 25%;
+        height: auto;
+        margin-top: 0px;
+        padding-top: 0px;
+    }
+
+    .logoletra {
+        margin-top: 0px;
+        padding-top: 0px;
+        width: 25%;
+        height: auto;
+       }
+}
